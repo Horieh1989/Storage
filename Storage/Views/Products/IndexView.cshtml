@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Storage.Models.Product>
+
+
+
+<form action="Filter" asp-controller="products" method="get">
+    <div class="input-group mb-3">
+
+        <input type="text" class="form-control" name="catagory" placeholder="search on catagory" />
+
+        <div class="inpu-group-append">
+            <select class="form-control" name="category"></select>
+
+        </div>
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </div>
+</form>
